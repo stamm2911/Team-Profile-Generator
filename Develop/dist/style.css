@@ -1,0 +1,51 @@
+header{
+    background-image: linear-gradient(rgb(27, 117, 0),rgb(19, 77, 1));
+    height:100px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(191, 255, 191));
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    align-self: center;
+    font-size: 300%;
+    color:white;
+}
+
+section{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div{
+    margin: 10px;
+}
+
+.card-title2{
+    font-size: 300%;
+}
+
+.card-title3{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.icon{
+    margin-right: 18px;
+}
+
+.card{
+    box-shadow: 10px 10px 5px grey;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+}
