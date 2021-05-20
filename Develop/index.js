@@ -1,11 +1,8 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const jest = require("jest");
 const Manager = require("./lib/manager");
 const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
-const { inherits } = require("util");
-const { StringDecoder } = require("string_decoder");
 const teamMembers = [];
 
 const managerQuestions = [
@@ -167,7 +164,7 @@ function renderPage() {
               <div class="card-text">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-dark bg-light">ID: ${teamMembers[i].id}</li>
-                  <li class="list-group-item text-dark bg-light">Email: ${teamMembers[i].email}</li>
+                  <li class="list-group-item text-dark bg-light">Email:<a href="mailto:${teamMembers[i].email}">${teamMembers[i].email}</a></li>
                   <li class="list-group-item text-dark bg-light">Office: ${teamMembers[i].officeNumber}</li>
                 </ul>
               </div>
@@ -183,7 +180,7 @@ function renderPage() {
               <div class="card-text">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-dark bg-light">ID: ${teamMembers[i].id}</li>
-                  <li class="list-group-item text-dark bg-light">Email: ${teamMembers[i].email}</li>
+                  <li class="list-group-item text-dark bg-light">Email:<a href="mailto:${teamMembers[i].email}">${teamMembers[i].email}</a></li>
                   <li class="list-group-item text-dark bg-light">GitHub:<a href="https://github.com/${teamMembers[i].github}" target="_blank"> ${teamMembers[i].github}</a></li>
                 </ul>
               </div>
@@ -199,7 +196,7 @@ function renderPage() {
               <div class="card-text">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-dark bg-light">ID: ${teamMembers[i].id}</li>
-                  <li class="list-group-item text-dark bg-light">Email: ${teamMembers[i].email}</li>
+                  <li class="list-group-item text-dark bg-light">Email:<a href="mailto:${teamMembers[i].email}">${teamMembers[i].email}</a></li>
                   <li class="list-group-item text-dark bg-light">School: ${teamMembers[i].school}</li>
                 </ul>
               </div>

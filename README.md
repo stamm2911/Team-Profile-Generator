@@ -16,7 +16,7 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## Usage
 
-Tutorial video: https:
+Tutorial video: https://drive.google.com/file/d/19scZ9vocquwEntCedPwzl2URHG1A7JGu/view
 
 ```md
 GIVEN a command-line application that accepts user input
